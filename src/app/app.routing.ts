@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { FunfactsComponent } from './funfacts';
+//import { FunfactsComponent } from './funfacts';
 
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
@@ -20,7 +20,7 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'userpage', component: UserpageComponent , canActivate: [AuthGuard] },
-    { path: 'funfacts', component: FunfactsComponent},
+    //{ path: 'funfacts', component: FunfactsComponent},
     
 
     // otherwise redirect to home

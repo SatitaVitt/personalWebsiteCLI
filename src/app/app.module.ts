@@ -14,11 +14,8 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
 import { UserpageComponent } from './userpage';
-import { FunfactsComponent } from './funfacts';
-
-
+//import { FunfactsComponent } from './funfacts';
 import { ChartsModule } from 'ng2-charts';
-
 
 @NgModule({
     imports: [
@@ -26,6 +23,7 @@ import { ChartsModule } from 'ng2-charts';
         ReactiveFormsModule,
         HttpClientModule,
         appRoutingModule,
+        
         ChartsModule
     ],
     declarations: [
@@ -34,8 +32,8 @@ import { ChartsModule } from 'ng2-charts';
         LoginComponent,
         RegisterComponent,
         AlertComponent,
-        UserpageComponent,
-        FunfactsComponent
+        UserpageComponent
+        //FunfactsComponent
        
     ],
     providers: [
