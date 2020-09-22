@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+ /*stylesheet for the whole page*/
  #mainNav {
     min-height: 56px;
     background-color: #fff;
@@ -99,24 +100,24 @@
   
   .masthead h1 {
 
-	/*font-family: 'Varela Round';*/
-	font-family: 'Comfortaa', cursive;
-    font-size: 3rem;
-    line-height: 3rem;
-	letter-spacing: 0.2rem;
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
-	
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+    /*font-family: 'Varela Round';*/
+    font-family: 'Comfortaa', cursive;
+      font-size: 3rem;
+      line-height: 3rem;
+    letter-spacing: 0.2rem;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8));
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	border-right: .15em solid grey; /* The typwriter cursor */
-	white-space: wrap; /* Keeps the content on a single line */
-	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: .2em; /* Adjust as needed */
-	animation: 
-	  typing 3.5s steps(40, end),
-	  blink-caret .75s step-end infinite;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid grey; /* The typwriter cursor */
+    white-space: wrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .2em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
   }
 
   /* The typing effect */
@@ -134,8 +135,8 @@
   
   .masthead h2 {
     /*max-width: 20rem;*/
-	font-size: 1rem;
-	text-align: left;
+	  font-size: 1rem;
+    text-align: left;
   }
   
   @media (min-width: 768px) {
@@ -191,19 +192,43 @@
   .about-section {
     padding-top: 10rem;
     background: linear-gradient(to bottom, #FFC300 0%, rgba(254, 243, 103, 0.9) 75%, rgba(254, 243, 103, 0.8) 100%);
+    
   }
   
   .about-section p {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    letter-spacing: 0.15rem;
+    text-align: left;
+    
   }
   
   .projects-section {
-    padding: 10rem 0;
+    padding: 5rem;
+    font-family: 'Comfortaa', cursive;
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.15rem;
+    text-align: left;
+    
   }
   
   .projects-section .featured-text {
     padding: 2rem;
+    color:green;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.15rem;
+    text-align: left;
   }
+  .projects-section .p {
+    color: azure;
+  }
+  
   
   @media (min-width: 992px) {
     .projects-section .featured-text {

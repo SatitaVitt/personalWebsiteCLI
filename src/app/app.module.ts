@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule , HTTP_INTERCEPTORS} from '@angular/common/http';
 
 // used to create fake backend
@@ -15,7 +15,7 @@ import { RegisterComponent } from './register';
 import { AlertComponent } from './_components';
 import { UserpageComponent } from './userpage';
 //import { FunfactsComponent } from './funfacts';
-import { ChartsModule } from 'ng2-charts';
+import { CommentsComponent } from './comments';
 
 @NgModule({
     imports: [
@@ -23,8 +23,7 @@ import { ChartsModule } from 'ng2-charts';
         ReactiveFormsModule,
         HttpClientModule,
         appRoutingModule,
-        
-        ChartsModule
+        FormsModule
     ],
     declarations: [
         AppComponent,
@@ -32,9 +31,8 @@ import { ChartsModule } from 'ng2-charts';
         LoginComponent,
         RegisterComponent,
         AlertComponent,
-        UserpageComponent
-        //FunfactsComponent
-       
+        UserpageComponent,
+        CommentsComponent       
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

@@ -1,4 +1,5 @@
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@600&family=Dancing+Script&family=Exo:wght@700&family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet"><header class="masthead">
+<html>
+<header class="masthead">
     <!--flying birds-->
     <div class="bird-container bird-container--one">
         <div class="bird bird--one"></div>
@@ -12,116 +13,160 @@
     <div class="bird-container bird-container--four">
         <div class="bird bird--four"></div>
 	</div>
-<!--
-    <div class="container d-flex h-100 align-items-center">
-        <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">WELCOME</h1> 
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Here are some of the things I have done, feel free to leave a comment or suggestion at the end 🥳</h2>
-        <a href="#about"><button class="button btn-primary js-scroll-trigger"><span>START </span></button></a>
-        </div>
-    </div>
-    -->
+
     <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-left">
-        <h1 class="mx-auto my-0">
-            I am a full stack developer, designer, and illustrator; Studied at Rutgers University with a double major in Computer Science and Finance;
-            <br>Have interest in so many things that I want to explore them all!
-        </h1> 
-        <br>
-        <p class="text-white-50 mx-auto mt-2 mb-5" style="text-align:left;" >
-            <b>Skill Set : <br>
-            Programming Language : </b> Java, Python, C, Latex, C#, SQL, JavaScript, TypeScript, HTML, CSS <br>
-            <b>Frameworks : </b>.NET Core, Angular, Angular-Cli, Entity Framework Core, ASP.NET Core Web API, Bootstrap<br> 
-
-        </p>
-        
-        <div class="arrows"></div>
-        <!--
-        <div class="col-lg-6">
-            <img class="img-fluid" src="assets/img/ZEPETO1.PNG" alt="">
-        </div>
-
-        -->
-        <div class="bottomright">
-            <img src="assets/img/ZEPETO_CAPTURE 6.PNG" alt="" width=306px height=546px>
-        </div>
-        <div class="bottomleft">
-            <img src="assets/img/kitty.PNG" alt="" width=403.2px height=301.9px>
-        </div>
-
-        
+            <h1 class="mx-auto my-0">
+                I am a full stack developer, designer, and illustrator; Studied at Rutgers University with a double major in Computer Science and Finance;
+                <br>Have interest in so many things that I want to explore them all!
+            </h1> 
+            <br>
             
+            <p class="text-white-50 mx-auto mt-2 mb-5" style="text-align:left;" >
+                <b>Skill Set : <br>
+                Programming Language : </b> Java, Python, C, Latex, C#, SQL, JavaScript, TypeScript, HTML, CSS <br>
+                <b>Frameworks : </b>.NET Core, Angular, Angular-Cli, Entity Framework Core, ASP.NET Core Web API, Bootstrap<br> 
+
+            </p>
+            <a href="#" class="mx-2">
+                <a href="https://github.com/SatitaVitt"><i class="fab fa-github"></i> GITHUB </a>
+
+            </a>
+            <a href="#" class="mx-2">
+                <a href="mailto:sv439@scarletmail.rutgers.edu?subject=Suggestions your website~"><i class="far fa-paper-plane"></i> EMAIL </a>
+            </a>
+             <a href="#" class="mx-2">
+                <a href="https://www.instagram.com/satitavv/"><i class="fab fa-instagram"></i> INSTAGRAM </a>
+            </a>
+        
+            <div class="arrows"></div>
+            <div class="bottomright">
+                <img src="assets/img/ZEPETO_CAPTURE 6.PNG" alt="" width=306px height=546px>
+            </div>
+
         </div>
     </div>
 </header>
 
 <!-- About Section -->
 <section id="about" class="about-section text-center">
-<div class="container">
+    <div class="container">
+                    <p>Hello and Welcome to my personal website! 
+                    <br>Here you will see some of my game developments and previous project explained in details. 
+                    <br>Feel free to leave a comment or suggestions in the contact section by clicking the Contact button on the NavBar on the top ;)</p>
 
-    <div class="row">
-    <div class="col-lg-8 mx-auto">
-    <h2 class="text-white mb-4">接下来就是project了呢:)</h2>
-        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name"
+                        required
+                        [(ngModel)]="model.name" name="name">
+                </div>
+
+                <div class = "form-group">
+                    <label for = "type"> Visitor type </label>
+                    <select class = "form-control" id = "type" required>
+                        
+                        <option *ngFor="let ty of type" [value]="ty">{{ty}}</option>
+                    </select>
+                    
+                </div>
+
+                <div class="form-group">
+                <label for="name">How did you get here?</label>
+                <input type="text" class="form-control" id="directed"
+                        required
+                        [(ngModel)]="model.name" name="directed">
+                    <br>
+                    <button> Totally optional :) </button>
+                    <!--need to add mailto link later-->
+                </div>
+                
+            </div>
+        </div>
     </div>
-    </div>
-    
-</div>
 </section>
 
 <!-- Projects Section -->
 <section id="games" class="projects-section bg-light extend-lg">
+    <h1>Projects</h1>
     <div class="container">
-
+       
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
             <div class="col-xl-8 col-lg-7">
-                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="">
+                    <img class="img-fluid mb-3 mb-lg-0" src="assets/img/maze01.jpg" alt="">
             </div>
         
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
-                    <h4>Coming Soon</h4>
-                    <p class="text-black-50 mb-0">Comming Soon...</p>
+                    <h4>Maze Game for 2 players!</h4>
+                    <p class="text-black-50 mb-0">
+                    Auto generating maze and random player's positions and one final position to get, whoever meet the final goal first will be the WINNER~ 
+                    <br>
+                    This game is implementing using <u>socket.io</u> for client-server communication; <br><u>Progamming Language :</u>  Html, CSS and Javascript
+                    <i>(Launching in 10 days!)</i>
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Project One Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="">
-            </div>
-            <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
-                    <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Coming Soon</h4>
-                            <p class="mb-0 text-white-50">Comming Soon...</p>
-                            <hr class="d-none d-lg-block mb-0 ml-0">
-                        </div>
+            <div class="bg-black text-center h-100 project">
+                
+                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                        <h4 class="text-white"><a href="assets/img/Fast_Tragectory_Replanning (2).pdf">A* Algorithm Implementation and Report</a></h4>
+                        <p class="mb-0 text-white-50">
+                        <b><a href="#game">Problem stated : </a> </b> Finding the shortest possible path from a START (A) postion to a TARGET (T) position with randomly generated blocks
+                        <br><b><a href="#game">Algorithms implemented : </a> </b> Forward A* Tracking VS. Backward A* Tracking, Heuristics in the Adapted A* Tracking
+                        <br><b><a href="assets/img/Fast_Tragectory_Replanning (2).pdf">Report : </a></b> Mainly comparing all three algorithms when facing the problem of finding the shortest path. Explaining reason such as 
+                        "Why Repeated Forward A* with Adaptive A* is sometimes faster than Repeated Forward A* with A* and sometime isn't" based on our research and implementation. 
+                        
+                        </p>
+                        <hr class="d-none d-lg-block mb-0 ml-0">
+                    
+                
                     </div>
-                </div>
+                <img src="assets/img/pichaqiu.gif" alt="" width="150" height="100" >
+                <img src="assets/img/pichaqiu.gif" width="150" height="100"alt=""  >
             </div>
         </div>
 
+        
     <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="">
-            </div>
-            <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
-                    <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Coming Soon</h4>
-                            <p class="mb-0 text-white-50">Comming Soon...</p>
-                            <hr class="d-none d-lg-block mb-0 mr-0">
-                        </div>
-                    </div>
+            <div class="bg-black text-center h-100 project">
+                
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white">Movie Shop Single Page Application </h4>
+                    <p class="mb-0 text-white-50">This SPA is use to shop for movies, this is a full stack application where I use Angular for Frontend and .NET framework and C# for Backend and implemented API to connect in between.
+                    Having a relational database using Microsoft AQL server to hold the database and generating SQL queries using LINQ from the Backend
+                    <br><a href="#game">More details : features of this project includes </a><br>
+                        1). User login/register/JWT Authenication <br>
+                        2). Users have own categories of movies sorted by favorited and purchased <br>
+                        3). Movies can be displayed by different genres <br>
+                        4). Pagination
+                        <br>
+                        <i>Github Source code are below~</i>
+
+                    </p>
+                    <a href="#" class="mx-2">
+                        <a href="https://github.com/SatitaVitt/MovieShopCoreAPI"><i class="fab fa-github"></i> API </a>
+                    </a>
+                    <a href="#" class="mx-2">
+                        <a href="https://github.com/SatitaVitt/MovieShopSPA"> Angular SPA Frontend </a>
+                    </a>
+                    <a href="#" class="mx-2">
+                        <a href="hhttps://github.com/SatitaVitt/MovieShop"> .NET MVC Backend </a>
+                    </a>
+                    <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
             </div>
         </div>
-
     </div>
 </section>
+
+</html>

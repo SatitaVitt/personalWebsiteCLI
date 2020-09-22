@@ -23,9 +23,9 @@
     </div>
     
 </div>
--->
-<!--
-<div *ngIf="(router.url === '/login') || (router.url === '/userpage') || (router.url === 'register'); else noMargin" class="jumbotron jumbotron-fluid">
+--><!--
+<html>
+<div *ngIf="router.url === 'login'; else noMargin" class="jumbotron jumbotron-fluid">
     <nav class="navbar fixed-top" id="mainNav" style="background-color:grey; opacity: .5;height: 80px;">
       
     </nav>
@@ -40,12 +40,15 @@
     </div>
 </div>
 <ng-template #noMargin>
-  <alert></alert>
+  
+  
   <router-outlet></router-outlet>
 </ng-template>
 -->
-<alert></alert>
-<router-outlet></router-outlet>
+<!--
+  <alert></alert>
+  <router-outlet></router-outlet>
+-->
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -57,7 +60,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Info</a>
+            <a class="nav-link js-scroll-trigger" href="#professtional">Professtional</a>
           </li>
           
           <a class="nav-item nav-link" href="https://satitavitt.github.io/TagCloud/">Fun Facts</a>
@@ -71,6 +74,7 @@
           <a class="nav-item nav-link" routerLink="/login">Login</a>
           <a class="nav-item nav-link" routerLink="/register">Register</a>
           <a class="nav-item nav-link" routerLink="/userpage">User</a>
+          <a class="nav-item nav-link" routerLink="/comments">Comments</a>
           <a *ngIf="currentUser" class="nav-item nav-link" (click)="logout()">Logout</a>
         </ul>
       </div>
@@ -90,95 +94,68 @@
   </header>
 -->
 
+<div class='body'>
+  <alert></alert>
+  <router-outlet></router-outlet>
+</div>
+
 
 <!--footer, comment, suggestion, and contact-->
-<section class="signup-section navbar-expand-lg bg-black bottom" id="signup">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
-
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Comment/Suggestions 🤓</h2>
-          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-            
-                
-            <div class="form-group">
-                <input type="text box" formControlName="comment" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
-                <br>
-                <button class="button btn-primary">
-                    Sent!
-                </button>
-                
-            </div>
-        </form>
-
-        </div>
-      </div>
-    </div>
-</section>
-  
-    
 <section class="contact-section navbar-expand-lg bg-black" id="contact">
-  
     <div class="container">
-      <div class = "row">
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">????</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">blablabla</div>
+        <div class = "row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Located At</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Fairfax, VA</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">sv439@scarletmail.rutgers.edu</a>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="#">sv439@scarletmail.rutgers.edu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Phone</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  +1 (848)252-8552
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                +1 (848)252-8552
-              </div>
-            </div>
+        
+          <div class="social d-flex justify-content-center">
+              <a href="#" class="mx-2">
+                  <a href="https://www.linkedin.com/in/satita-vittayaareekul/"><i class="fab fa-linkedin"></i></a>
+              </a>
+              <a href="#" class="mx-2">
+                  <a href="https://github.com/SatitaVitt"><i class="fab fa-github"></i> </a>
+              </a>
           </div>
-        </div>
+  </div>
+</section>
 
-      </div>
-      
-      
-        <div class="social d-flex justify-content-center">
-            <a href="#" class="mx-2">
-                <a href="https://www.linkedin.com/in/satita-vittayaareekul/"><i class="fab fa-linkedin"></i></a>
-            </a>
-            <a href="#" class="mx-2">
-                <a href="https://github.com/SatitaVitt"><i class="fab fa-github"></i> </a>
-
-            </a>
-        </div>
-      
-      
-    </div>
-  </section>
   <!-- Footer -->
   <footer class="bg-black small text-center text-white-50">
     <div class="container">
-      Copyright &copy; Your Website 2020
+      Copyright &copy; Saita's Website 2020
     </div>
   </footer>

@@ -1,0 +1,25 @@
+<section class="signup-section navbar-expand-lg bg-black bottom" id="signup">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Comment/Suggestions 🤓</h2>
+          <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            
+                
+            <div class="form-group">
+                <input type="text box" formControlName="comment" class="form-control" [ngClass]="{ 'is-invalid': submitted }" />
+                <br>
+                <button class="button btn-primary">
+                    Sent!
+                </button>
+                
+            </div>
+        </form>
+
+        </div>
+      </div>
+    </div>
+</section>

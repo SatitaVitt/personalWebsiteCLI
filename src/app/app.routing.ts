@@ -1,4 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
+import { CommentsComponent } from './comments';
 //import { FunfactsComponent } from './funfacts';
 
 import { HomeComponent } from './home';
@@ -20,7 +21,7 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'userpage', component: UserpageComponent , canActivate: [AuthGuard] },
-    //{ path: 'funfacts', component: FunfactsComponent},
+    { path: 'comments', component: CommentsComponent},
     
 
     // otherwise redirect to home
