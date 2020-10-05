@@ -3,7 +3,9 @@ import { first } from 'rxjs/operators';
 
 import { UserService, AuthenticationService } from '../_services';
 
-@Component({ templateUrl: 'userpage.component.html' })
+@Component({ 
+    selector: 'app-userpage',
+    templateUrl: 'userpage.component.html' })
 export class UserpageComponent implements OnInit {
     currentUser: any;
     users = [];

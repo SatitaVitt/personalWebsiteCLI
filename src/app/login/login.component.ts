@@ -7,7 +7,7 @@ import { first } from 'rxjs/operators';
 import { AuthenticationService, AlertService } from '../_services'
 
 @Component({ 
-    selector: 'app-login',
+   
     templateUrl: 'login.component.html' ,
     styleUrls: ['./login.component.css']
 

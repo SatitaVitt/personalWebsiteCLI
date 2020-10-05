@@ -1,54 +1,5 @@
-<!-- nav -->
-<!--The *ngIf="currentUser" directive renders the nav if the currentUser property contains a value, which indicates that the user is logged in.-->
-<!--<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" routerLink="/login">Login</a>
-        <a class="nav-item nav-link" routerLink="/register">Register</a>
-        <a *ngIf="currentUser" class="nav-item nav-link" (click)="logout()">Logout</a>
-    </div>
-</nav>-->
 
-<!-- main content container -->
-<!--
-<div class="jumbotron jumbotron-fluid">
-    <router-outlet></router-outlet>
-    <div class="container container-fluid">
-        <div class="row">
-            <div class="mx-auto">
-                <alert></alert>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </div>
-    
-</div>
---><!--
-<html>
-<div *ngIf="router.url === 'login'; else noMargin" class="jumbotron jumbotron-fluid">
-    <nav class="navbar fixed-top" id="mainNav" style="background-color:grey; opacity: .5;height: 80px;">
-      
-    </nav>
-    
-    <div class="container container-fluid">
-        <div class="row">
-            <div class="mx-auto">
-                <alert></alert>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </div>
-</div>
-<ng-template #noMargin>
-  
-  
-  <router-outlet></router-outlet>
-</ng-template>
--->
-<!--
-  <alert></alert>
-  <router-outlet></router-outlet>
--->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -57,29 +8,53 @@
         Menu
         <i class="fas fa-bars"></i>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#professtional">Professtional</a>
-          </li>
-          
-          <a class="nav-item nav-link" href="https://satitavitt.github.io/TagCloud/">Fun Facts</a>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#draws">Draws</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-          </li>
-          <a class="nav-item nav-link" routerLink="/login">Login</a>
-          <a class="nav-item nav-link" routerLink="/register">Register</a>
-          <a class="nav-item nav-link" routerLink="/userpage">User</a>
+          <a class="nav-item nav-link" href="https://satitavitt.github.io/TagCloud/">FunFacts</a>
+          <a class="nav-link js-scroll-trigger" routerLink="/blog">Blog</a>
+          <a class="nav-link js-scroll-trigger" href="#draws">Draws</a>
+          <a class="nav-item nav-link" routerLink="/baker">Baking</a>
           <a class="nav-item nav-link" routerLink="/comments">Comments</a>
-          <a *ngIf="currentUser" class="nav-item nav-link" (click)="logout()">Logout</a>
-        </ul>
-      </div>
-    </div>
+<!--
+          <ng-sidebar
+            [(opened)]="_opened">
+            <button class="demo-control" (click)="_toggleOpened()">Close sidebar</button>
+            <hr>
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-item nav-link" routerLink="/login">Login</a>
+            <a class="nav-item nav-link" routerLink="/register">Register</a>
+            <a class="nav-item nav-link" routerLink="/userpage">User</a>
+            <a *ngIf="currentUser" class="nav-item nav-link" (click)="logout()">Logout</a>
+          </ng-sidebar>
+-->       
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-brown" style="margin-top : 20px"> Others <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a class="w3-bar-item w3-button" href="#signup">Contact</a>
+              <a class="w3-bar-item w3-button" routerLink="/login">Login</a>
+              <a class="w3-bar-item w3-button" routerLink="/register">Register</a>
+              <a class="w3-bar-item w3-button" routerLink="/userpage">User</a>
+              <a *ngIf="currentUser" class="nav-item nav-link" (click)="logout()">Logout</a>
+            </div>
+          </div> 
   
+        </ul>
+        </div>   
+<!--
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive01" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Others
+            <i class="fas fa-bars"></i>
+            <div class="collapse navbar-collapse" id="navbarResponsive01">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            <a class="nav-item nav-link" routerLink="/login">Login</a>
+            <a class="nav-item nav-link" routerLink="/register">Register</a>
+            <a class="nav-item nav-link" routerLink="/userpage">User</a>
+            <a *ngIf="currentUser" class="nav-item nav-link" (click)="logout()">Logout</a>
+          </div>
+          </button>
+          -->
+    </div>
 </nav>
 
 <!--
@@ -93,11 +68,22 @@
     </div>
   </header>
 -->
+<!--
+<div *ngIf="router.url === '/blog'">
+   
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row">
+            <div class="body">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div> -->
 
-<div class='body'>
-  <alert></alert>
-  <router-outlet></router-outlet>
-</div>
+
+<router-outlet></router-outlet>
 
 
 <!--footer, comment, suggestion, and contact-->
