@@ -1,5 +1,5 @@
-import { OnInit , Input} from '@angular/core';
-import { Component, Directive } from '@angular/core';
+//import { OnInit , Input} from '@angular/core';
+import { Component } from '@angular/core';
 //import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { AuthenticationService } from './_services';
  })
 
 export class AppComponent {
-
+  
      currentUser: any;
      constructor(
         public router: Router,

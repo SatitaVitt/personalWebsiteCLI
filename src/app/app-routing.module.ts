@@ -1,6 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BlogComponent } from './blog/blog.component';
+//mport { BlogComponent } from './blog/blog.component';
+//import { BlogPostViewComponent } from './blog/post/blog-post-view.component';
 import { CommentsComponent } from './comments';
 //import { FunFactComponent } from './fun-fact/fun-fact.component';
 //import { FunfactsComponent } from './funfacts';
@@ -10,7 +12,6 @@ import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 import { UserpageComponent } from './userpage';
 import { AuthGuard } from './_helpers';
-
 
 const routes: Routes = [
     
@@ -25,16 +26,26 @@ const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'userpage', component: UserpageComponent , canActivate: [AuthGuard] },
     { path: 'comments', component: CommentsComponent},
-    { path: 'blog', component: BlogComponent},
-    //{ path: 'funfact', component: FunFactComponent},
     
+    { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
+    
+    { path: 'post', loadChildren: () => import('./post/post.module').then(m => m.PostModule) },
+    /*{ path: 'blogpost', component: BlogPostViewComponent},
+    //{ path: 'blog', component: BlogViewComponent},
+    //{ path: 'funfact', component: FunFactComponent},
+    { path: "blog", loadChildren: () =>
+            import("./blog/blog.module").then(m => m.BlogModule)
+    },*/
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    declarations:[],
+    imports: [
+        CommonModule,
+        RouterModule.forRoot(routes)],
     exports: [RouterModule]
   })
   export class AppRoutingModule { }

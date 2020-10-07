@@ -2,7 +2,7 @@
 import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule , HTTP_INTERCEPTORS} from '@angular/common/http';
+import { HttpClient, HttpClientModule , HTTP_INTERCEPTORS} from '@angular/common/http';
 
 // used to create fake backend
 import { fakeBackendProvider } from './_helpers';
@@ -18,8 +18,12 @@ import { CommentsComponent } from './comments';
 import { SidebarModule } from 'ng-sidebar';
 //import { BlogComponent } from './blog/blog.component';
 import { CommonModule } from '@angular/common';
-import { AppRoutingModule } from './app.routing';
+import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { MarkdownModule } from 'ngx-markdown';
+import { ScullyLibModule } from '@scullyio/ng-lib';
+//import { routes } from './app.routing';
+
 //import { FunFactComponent } from './fun-fact/fun-fact.component';
 //import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,8 +37,10 @@ import { RouterModule } from '@angular/router';
         FormsModule,
         SidebarModule,
         CommonModule,
-        RouterModule
-        
+        RouterModule,
+        //RouterModule.forRoot(routes),
+        MarkdownModule.forRoot({ loader: HttpClient }),
+        ScullyLibModule,
         //BrowserAnimationsModule,
         
     ],
