@@ -29,7 +29,7 @@ const routes: Routes = [
     
     { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
     
-    { path: 'post', loadChildren: () => import('./post/post.module').then(m => m.PostModule) },
+    //{ path: 'post', loadChildren: () => import('./post/post.module').then(m => m.PostModule) },
     /*{ path: 'blogpost', component: BlogPostViewComponent},
     //{ path: 'blog', component: BlogViewComponent},
     //{ path: 'funfact', component: FunFactComponent},
