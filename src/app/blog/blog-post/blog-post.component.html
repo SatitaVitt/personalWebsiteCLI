@@ -1,5 +1,5 @@
 
-
+<div class="whole">
 <div class="left-half">
     <img src="assets/img/user.png" alt="Blogger" height="150">
 
@@ -28,26 +28,16 @@
 
 <div class="right-half">
     <!--<div markdown [src]="'assets/blog/blog.md'"></div>-->
-    <h1 *ngIf="$blogPostMetadata | async as blogPost">Blog Post by {{blogPost.authorName}}</h1>
+    <h1 *ngIf="$blogPostMetadata | async as blogPost">{{blogPost.title}}</h1>
+    <p *ngIf="$blogPostMetadata | async as blogPost">Blog Post by {{blogPost.author}}, {{blogPost.date}} -- {{blogPost.category}}</p>
+
     <hr>
     <!-- This is where Scully will inject the static HTML -->
     <scully-content></scully-content>
     <hr>
-    <h2>End of content</h2>
+    <p><a href="/blog">Back to list..</a></p>
 
 <!--
-    <article>
-        <h1>11 hrs Connection Flight in JAPAN</h1>
-        <h5>09/04/2019</h5>
-        <h5 style="color:purple">Advanture</h5>
-        <p>09/4/2019 - the day where I have to fly back to New Jersey to finish my last semester at Rutgers. I bought a flight that need to stop in Japan for 11 hrs and also need to transfer from HND airport to NRT airport by myself.
-        <br>
-        The plane arrived at 5am and departure at 5pm. I thought it would be a perfect timing to feel the <i>real</i> Japan.
-        <br>
-        And I went, without any schedule ahead of time. I didn't even know what to take HND from to NRT...
-        </p>
-        <a href="/japanblog">Click to see full blog</a>
-    </article>
 
     <article>
         <h2>How I built this website, and what I would recommand for new bees </h2>
@@ -65,3 +55,4 @@
 
 </div>
 
+</div>

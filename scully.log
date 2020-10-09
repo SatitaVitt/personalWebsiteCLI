@@ -3,3 +3,72 @@
 Using stored unhandled routes!.
    To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
 ----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+---------------------------------- The router plugin "[33mcontentFolder[39m has thrown the below error,
+              while trying to render route "[33munknown[39m"
+              Scully will exitYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 5, column 10:
+    published: true
+             ^
+
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+---------------------------------- The router plugin "[33mcontentFolder[39m has thrown the below error,
+              while trying to render route "[33munknown[39m"
+              Scully will exitYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 5, column 5:
+    date: 10/01/2020
+        ^
+
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+---------------------------------- The router plugin "[33mcontentFolder[39m has thrown the below error,
+              while trying to render route "[33munknown[39m"
+              Scully will exitYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 5, column 5:
+    date: 10-01-2020
+        ^
+
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+---------------------------------- The router plugin "[33mcontentFolder[39m has thrown the below error,
+              while trying to render route "[33munknown[39m"
+              Scully will exitYAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 5, column 5:
+    date: 10-01-2020
+        ^
+
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------

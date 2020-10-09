@@ -1,4 +1,4 @@
-
+<div class="whole">
 <div class="left-half">
     <img src="assets/img/user.png" alt="Blogger" height="150">
 
@@ -32,39 +32,18 @@
 
     <ul aria-label="Blog posts">
     <li *ngFor="let blog of $blogPosts | async">
-        <a [routerLink]="blog.route">
-        {{blog.title}} by {{blog.authorName}}
-        </a>
+        <h1><a [routerLink]="blog.route">
+        {{blog.title}} </a></h1>
+        by {{blog.author}}, {{blog.date}} 
+        <p style="color: #4056A1">{{blog.category}}</p>
+        
+        {{blog.description}}
+        
+        
     </li>
+    <br>
     </ul>
 
-<!--
-    <article>
-        <h1>11 hrs Connection Flight in JAPAN</h1>
-        <h5>09/04/2019</h5>
-        <h5 style="color:purple">Advanture</h5>
-        <p>09/4/2019 - the day where I have to fly back to New Jersey to finish my last semester at Rutgers. I bought a flight that need to stop in Japan for 11 hrs and also need to transfer from HND airport to NRT airport by myself.
-        <br>
-        The plane arrived at 5am and departure at 5pm. I thought it would be a perfect timing to feel the <i>real</i> Japan.
-        <br>
-        And I went, without any schedule ahead of time. I didn't even know what to take HND from to NRT...
-        </p>
-        <a href="/japanblog">Click to see full blog</a>
-    </article>
-
-    <article>
-        <h2>How I built this website, and what I would recommand for new bees </h2>
-        <h5>09/01/2020</h5>
-        <h5 style="color:purple">Angular</h5>
-        <p> I have planned to build a personal website since 09/2019, have tried to implement in so many ways. And finally deployed it in 09/2020！
-        <br>
-        To be honest, a website doesn't take that long. The current verison of this website only took me less than a month. 
-        <br>
-        The hard part is to find the right way before you start!
-        </p>
-        <a href="/websiteblog" >Click to see the full blog about this~</a>
-    </article>
--->
-
+</div>
 </div>
 
