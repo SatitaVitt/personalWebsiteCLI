@@ -1278,7 +1278,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector
         _components__WEBPACK_IMPORTED_MODULE_9__["AlertComponent"],
         _userpage__WEBPACK_IMPORTED_MODULE_10__["UserpageComponent"],
         _comments__WEBPACK_IMPORTED_MODULE_11__["CommentsComponent"]
-        //BlogComponent,
+        //BlogComponent
         //FunFactComponent
     ], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_2__["ReactiveFormsModule"],
@@ -1312,7 +1312,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector
                     _components__WEBPACK_IMPORTED_MODULE_9__["AlertComponent"],
                     _userpage__WEBPACK_IMPORTED_MODULE_10__["UserpageComponent"],
                     _comments__WEBPACK_IMPORTED_MODULE_11__["CommentsComponent"]
-                    //BlogComponent,
+                    //BlogComponent
                     //FunFactComponent
                 ],
                 //schemas:[CUSTOM_ELEMENTS_SCHEMA],

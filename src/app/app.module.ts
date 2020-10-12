@@ -52,7 +52,7 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
         AlertComponent,
         UserpageComponent,
         CommentsComponent
-        //BlogComponent,
+        //BlogComponent
         //FunFactComponent
     ],
     //schemas:[CUSTOM_ELEMENTS_SCHEMA],
