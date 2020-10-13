@@ -3,7 +3,7 @@ title: How I built this website, and what I have leanrt..
 description: I have planned to build a personal website since 09/2019, have tried to implement in so many ways. And finally deployed it in 09/2020！To be honest, a website doesn't take that long. The current verison of this website only took me less than a month. The hard part is to find the right way before you start!
 date: 10-01-2020
 author: Satita
-slug: /blog/this-website/
+
 category: Coding
 published: true
 ---

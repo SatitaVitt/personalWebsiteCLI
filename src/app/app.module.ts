@@ -23,6 +23,7 @@ import { RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 //import { routes } from './app.routing';
+//import {enableProdMode} from '@angular/core';
 
 //import { FunFactComponent } from './fun-fact/fun-fact.component';
 //import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';

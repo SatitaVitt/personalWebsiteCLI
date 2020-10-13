@@ -1250,6 +1250,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //import { routes } from './app.routing';
+//import {enableProdMode} from '@angular/core';
 //import { FunFactComponent } from './fun-fact/fun-fact.component';
 //import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

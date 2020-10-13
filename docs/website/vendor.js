@@ -1117,7 +1117,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 /**
- * @license Angular v10.1.4
+ * @license Angular v10.1.5
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -7874,7 +7874,7 @@ FormBuilder.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.1.4');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.1.5');
 
 /**
  * @license
@@ -18514,7 +18514,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 /**
- * @license Angular v10.1.4
+ * @license Angular v10.1.5
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -37767,7 +37767,7 @@ class Version {
 /**
  * @publicApi
  */
-const VERSION = new Version('10.1.4');
+const VERSION = new Version('10.1.5');
 
 /**
  * @license
@@ -50825,7 +50825,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ɵgetDOM", function() { return _angular_common__WEBPACK_IMPORTED_MODULE_0__["ɵgetDOM"]; });
 
 /**
- * @license Angular v10.1.4
+ * @license Angular v10.1.5
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -52956,7 +52956,7 @@ function elementMatches(n, selector) {
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.1.4');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.1.5');
 
 /**
  * @license
@@ -54991,7 +54991,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵsetRootDomAdapter", function() { return setRootDomAdapter; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /**
- * @license Angular v10.1.4
+ * @license Angular v10.1.5
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -60276,7 +60276,7 @@ function isPlatformWorkerUi(platformId) {
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.1.4');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('10.1.5');
 
 /**
  * @license
@@ -63079,7 +63079,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
 /**
- * @license Angular v10.1.4
+ * @license Angular v10.1.5
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -65379,7 +65379,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 /**
- * @license Angular v10.1.4
+ * @license Angular v10.1.5
  * (c) 2010-2020 Google LLC. https://angular.io/
  * License: MIT
  */
@@ -68099,9 +68099,8 @@ function getRouteGuards(futureNode, currNode, parentContexts, futurePath, checks
         else {
             getChildRouteGuards(futureNode, currNode, parentContexts, futurePath, checks);
         }
-        if (shouldRun) {
-            const component = context && context.outlet && context.outlet.component || null;
-            checks.canDeactivateChecks.push(new CanDeactivate(component, curr));
+        if (shouldRun && context && context.outlet && context.outlet.isActivated) {
+            checks.canDeactivateChecks.push(new CanDeactivate(context.outlet.component, curr));
         }
     }
     else {
@@ -71181,7 +71180,7 @@ function provideRouterInitializer() {
 /**
  * @publicApi
  */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.1.4');
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('10.1.5');
 
 /**
  * @license
