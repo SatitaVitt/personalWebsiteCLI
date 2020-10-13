@@ -5,10 +5,6 @@ date: 10-01-2020
 author: Satita
 slug: /blog/this-website/
 category: Coding
-tags: 
-prev: 
-next: 
-popularity: 
 published: true
 ---
 
