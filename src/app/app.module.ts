@@ -22,6 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { BakingComponent } from './baking/baking.component';
+import { DrawComponent } from './draw/draw.component';
 //import { routes } from './app.routing';
 //import {enableProdMode} from '@angular/core';
 
@@ -52,7 +54,9 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
         RegisterComponent,
         AlertComponent,
         UserpageComponent,
-        CommentsComponent
+        CommentsComponent,
+        BakingComponent,
+        DrawComponent
         //BlogComponent
         //FunFactComponent
     ],

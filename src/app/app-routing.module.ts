@@ -1,9 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BakingComponent } from './baking/baking.component';
 //mport { BlogComponent } from './blog/blog.component';
 //import { BlogPostViewComponent } from './blog/post/blog-post-view.component';
 import { CommentsComponent } from './comments';
+import { DrawComponent } from './draw/draw.component';
 //import { FunFactComponent } from './fun-fact/fun-fact.component';
 //import { FunfactsComponent } from './funfacts';
 
@@ -26,7 +28,8 @@ const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'userpage', component: UserpageComponent , canActivate: [AuthGuard] },
     { path: 'comments', component: CommentsComponent},
-    
+    { path: 'baking', component: BakingComponent},
+    { path: 'draw', component: DrawComponent},
     { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
     
     //{ path: 'post', loadChildren: () => import('./post/post.module').then(m => m.PostModule) },
