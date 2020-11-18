@@ -3,7 +3,6 @@ title: 11 hrs Connection Flight in Japan
 description: 09/4/2019 - the day where I have to fly back to New Jersey to finish my last semester at Rutgers. I bought a flight that need to stop in Japan for 11 hrs and also need to transfer from HND airport to NRT airport by myself. The plane arrived at 5am and departure at 5pm. I thought it would be a perfect timing to feel the <i>real</i> Japan. And I went, without any schedule ahead of time. I didn't even know what to take HND from to NRT...
 date: 09-04-2019
 author: Satita
-
 category: Travel
 tags: 
 prev: 

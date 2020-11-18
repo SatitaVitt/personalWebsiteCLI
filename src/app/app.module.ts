@@ -49,7 +49,7 @@ import { DrawComponent } from './draw/draw.component';
     ],
     declarations: [
         AppComponent,
-        HomeComponent,
+        //HomeComponent,
         LoginComponent,
         RegisterComponent,
         AlertComponent,

@@ -1,0 +1,121 @@
+
+<div class = "body">
+    <div class ="text1">
+        <h1>All the Dessert Receipes I have Tried 💗</h1>
+        <h2><i>Click each photos to see the process of making these desserts!</i></h2>
+    </div>
+
+    <div class="grid-container">
+        <div *ngFor="let bake of $bakePosts | async">
+            <a [routerLink] = "bake.route">
+                <img class='grid-item grid-item-1' src = {{bake.img}}> 
+            </a>
+            <p> {{bake.description}}</p>
+        </div>
+
+        <div>
+            <img class='grid-item grid-item-2' src='assets/bake-img/mango-nuomici.JPG' alt=''>
+            <p>"Mango Nuomici - Almost cried while making this, so hard to put mango inside of those memorialis hirta"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3' src='assets/bake-img/souffle.jpg' alt=''>
+            <p>"Souffle! Should have put more sugar"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-4' src='assets/bake-img/berry-yogurt-cake.jpg' alt=''>
+            <p>"Berry Yogurt Cake~"</p>
+        </div>
+        
+        <div>
+            <img class='grid-item grid-item-5' src='assets/bake-img/cotton-cheese-cake.JPG' alt=''>
+            <p>"Cotton Cheese Cake - my dad's favorite cake lol, and it is so easy to make</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6' src='assets/bake-img/cheesecake.jpg' alt=''>
+            <p>"Cheesecake~"</p>
+        </div>
+        
+        <div>
+            <img class='grid-item grid-item-7' src='assets/bake-img/salmon-crepe.JPG' alt=''>
+            <p>"Salmon Crepe - Aaaaaamazingggg who said crepe can only be sweet"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8' src='assets/bake-img/glutinous-rice-balls.JPG' alt=''>
+            <p>"Glutinous Rice Meatballs - sooo hard to steam it through"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9' src='assets/bake-img/marshmallow-chip.JPG' alt=''>
+            <p>"Marshmallow w/ Chips!"</p>
+        </div>
+    
+    </div>
+</div>
+    <!--
+        <div>
+            <img class='grid-item grid-item-1' src='assets/bake-img/sakura-pastries.JPG' alt=''>
+            <p>"Sakura Pastries - It just looks nice.."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-2' src='assets/bake-img/cranberry-cookie.JPG' alt=''>
+            <p>"Cranberry Cookies - Baked several time and succeed everytime! Yum Yum"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3' src='assets/bake-img/japanese-double-fromage-cheesecake.JPG' alt=''>
+            <p>"Japanese Double Fromage Cheesecake - One of the time delicious cake I've even baked!"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-4' src='assets/bake-img/tiramisu.JPG' alt=''>
+            <p>"Tiramisu - Okay, it does not stand, it looks weird but does taste good! "</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-5' src='assets/bake-img/mango-nuomici.JPG' alt=''>
+            <p>"Mango Nuomici - Almost cried while making this, so hard to put mango inside of those memorialis hirta"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6' src='assets/bake-img/souffle.jpg' alt=''>
+            <p>"Souffle! Should have put more sugar"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-7' src='assets/bake-img/berry-yogurt-cake.jpg' alt=''>
+            <p>"Berry Yogurt Cake~"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8' src='assets/bake-img/mango-milky-jelly.JPG' alt=''>
+            <p>"Mango Milky Jelly - It taste so good that after I finish taking photos, my sister almost finish it."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9' src='assets/bake-img/cotton-cheese-cake.JPG' alt=''>
+            <p>"Cotton Cheese Cake - my dad's favorite cake lol, and it is so easy to make</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10' src='assets/bake-img/soymilk-custard-cake.jpg' alt=''>
+            <p>"Soymilk Custard Cake - I've realized how much I dislike the taste of mix soymilk and tofu, but chiffon cake taste real gooooood!"</p>
+        </div>
+      
+        <div>
+            <img class='grid-item grid-item-11' src='assets/bake-img/matcha-berry-crepecake.JPG' alt=''>
+            <p>"Matcha Berry Crepecake - the hard part is to make 20-30 crepes.. (That's why this one looks so 'short')"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-12' src='assets/bake-img/cheesecake.jpg' alt=''>
+            <p>"Cheesecake~"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-13' src='assets/bake-img/butter-cookies.JPG' alt=''>
+            <p>"Butter Cookies - still in love with Cranberry Cookie!"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-14' src='assets/bake-img/salmon-crepe.JPG' alt=''>
+            <p>"Salmon Crepe - Aaaaaamazingggg who said crepe can only be sweet"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-15' src='assets/bake-img/glutinous-rice-balls.JPG' alt=''>
+            <p>"Glutinous Rice Meatballs - sooo hard to steam it through"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-16' src='assets/bake-img/marshmallow-chip.JPG' alt=''>
+            <p>"Marshmallow w/ Chips!"</p>
+        </div>
+    </div>
+</div>
+-->

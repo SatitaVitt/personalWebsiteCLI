@@ -4,6 +4,12 @@ export const config: ScullyConfig = {
   projectName: "website",
   outDir: './docs',
   routes: {
+    "/bake/:title": {
+      type: 'contentFolder',
+      title: {
+        folder: "./bake"
+      }
+    },
   //   '/blog/:slug': {
   //     type: 'contentFolder',
   //     slug: {

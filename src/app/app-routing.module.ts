@@ -28,9 +28,11 @@ const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'userpage', component: UserpageComponent , canActivate: [AuthGuard] },
     { path: 'comments', component: CommentsComponent},
-    { path: 'baking', component: BakingComponent},
+    // { path: 'baking', component: BakingComponent},
     { path: 'draw', component: DrawComponent},
     { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
+    
+    { path: 'bake', loadChildren: () => import('./bake/bake.module').then(m => m.BakeModule) },
     
     //{ path: 'post', loadChildren: () => import('./post/post.module').then(m => m.PostModule) },
     /*{ path: 'blogpost', component: BlogPostViewComponent},
