@@ -1,11 +1,13 @@
-<div class = "body">
-    <h1 *ngIf="$bakePostMetadata | async as bakePost">{{bakePost.title}}</h1>
-    <p *ngIf="$bakePostMetadata | async as bakePost">{{bakePost.details}}</p>
-    <hr>
-    <scully-content></scully-content>
-    <hr>
-    <p><a href="/bake">Back to bake gallory..</a></p>
-</div>
+
+  <div class = "body">
+      <h1 *ngIf="$bakePostMetadata | async as bakePost">{{bakePost.title}}</h1>
+      <p *ngIf="$bakePostMetadata | async as bakePost">{{bakePost.details}}</p>
+      <hr>
+      <scully-content></scully-content>
+      <hr>
+      <p><a href="/bake">Back to bake gallory..</a></p>
+  </div>
+
 
 
 
