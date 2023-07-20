@@ -1,4 +1,3 @@
-
 <header class="masthead">
     <!--flying birds-->
     <div class="bird-container bird-container--one">
@@ -51,7 +50,7 @@
 <!-- About Section -->
 <section id="about" class="about-section text-center">
     <div class="container">
-        <p>Hello and Welcome to my personal website! 
+        <p  class="mb-0 text-black-50">Hello and Welcome to my personal website! 
         <br>Here you will see some of my game developments and previous project explained in details. 
         <br>Feel free to leave a comment or suggestions by clicking the Comment Section on the NavBar on the top ;)</p>
         <br>
@@ -92,8 +91,7 @@
 <!-- Projects Section -->
 <section id="project" class="projects-section bg-light extend-lg">
     <h1>Projects</h1>
-    <div class="container">
-       
+    <div class="container">       
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
             <div class="col-xl-7 col-lg-6">
@@ -109,9 +107,83 @@
                     Auto generating maze and random player's positions and one final position to get, whoever meet the final goal first will be the WINNER~ 
                     <br>
                     This game is implementing using <u>socket.io</u> for client-server communication; <br><u>Progamming Language :</u>  Html, CSS and Javascript
-                    <i>(Launching in 10 days!)</i>
+                    <i>(Launching soooooon!)</i>
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Project One Row CS224U -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="bg-black text-center h-100 project">
+                
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white"><a href="assets/img/CS224U_Final_Paper_Spring_2022.pdf">Multiple Model Ensemble for Cross-Lingual Question Answering</a></h4>
+                    <p class="mb-0 text-white-50">
+                    As the amount of information available to the average person has increased dramatically in recent years, much progress has been made in the field of automated question answering systems. Much of this effort has gone into monolingual question answering, especially in English, due to the overwhelming presence of English-language information present on the web. It can be challenging to apply these results to languages with less readily accessible material, imposing barriers on global communities trying to find relevant information. 
+                    <br>
+                    <br>In this project, we propose a novel ensemble method for utilizing large English corpora for answering questions in a variety of languages. We find that, when dealing with multilingual queries and an English only context corpus, query translation and late-interaction retrieval outperforms dense passage retrieval with a multilingual encoder.
+                    
+                    </p>
+                    <a href="#" class="mx-2">
+                        <a href="assets/img/CS224U_Final_Paper_Spring_2022.pdf"><i class="far fa-file-alt"></i> Report </a>
+                    </a>
+                    <hr class="d-none d-lg-block mb-0 ml-0">                  
+            
+                </div>
+                <img src="assets/img/pichaqiu.gif" alt="" width="150" height="100" >
+                <img src="assets/img/pichaqiu.gif" width="150" height="100"alt=""  >
+            </div>
+        </div>
+
+        <!-- Project Two Row CS229 -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="bg-black text-center h-100 project">
+                
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white"><a href="assets/img/Imputation_of_Missing_Financial_Data.pdf">Imputation of Missing Financial Data</a></h4>
+                    <p class="mb-0 text-white-50">
+                    Missing data is a common practical problem often encountered in data collection. It is prevalent in virtually all areas and the finance industry is one of the most affected. In fact, in asset pricing studies, missing covariates like firm characteristics are frequently observed.                  
+                    <br>
+                    <br>In this project, we aim to find a better approach for imputing financial data via machine learning techniques, so that more complete data can be used for further analysis. To be more specific, we are going to use firm characteristics as our imputation target. Some important characteristics include book-to-market (B2M), operating profitability (OP), investment (INV), and leverage (LEV). 
+                    <br>
+                    <br>We mainly try four different algorithms to impute missing data in these firm characteristics: Generative Adversarial Imputation Nets (GAIN), Variational Autoencoder (VAE), KNN impute algorithm, Random Forest Imputation (MissForest).
+                    </p>
+
+                    <a href="#" class="mx-2">
+                        <a href="assets/img/Imputation_of_Missing_Financial_Data.pdf"><i class="far fa-file-alt"></i> Report </a>
+                    </a>
+                    <hr class="d-none d-lg-block mb-0 ml-0">                  
+            
+                </div>
+                <img src="assets/img/cs229_project_poster.jpg" alt="CS229 Poster Section @ Stanford"  width="50%" >                
+            </div>
+        </div>
+
+        <!-- Project Three Row CS231N -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="bg-black text-center h-100 project">
+                
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                    <h4 class="text-white"><a href="assets/img/cs231n_final_report.pdf">Self-Supervised Learning Methods on Room Type Classification</a></h4>
+                    <p class="mb-0 text-white-50">
+                        As the world increasingly embraces smart home technologies and automation, the need for accurate room type classification algorithms has become paramount. These algorithms are instrumental in enhancing home automation, facilitating robot navigation, fortifying security systems, and other AI applications. Our motivation to address this challenge lies in the potential improvements these systems could bring to
+                        various domestic and commercial applications, improving lives and operational efficiency.
+                        <br>
+                        <br>The problem at hand involves developing a selfsupervised learning model that can accurately classify different room types in a dynamic domestic environment using visual input. Such a model should account for factors like furniture repositioning, lighting changes, and other environmental alterations affecting room appearances. The input to our algorithm is an image, and we leverage pre-trained self-supervised
+                        learning models like SimCLR, MAE, and DINO v2 to output a predicted room type, such as a living room, kitchen, bedroom, or bathroom.
+                        <br>
+                        <br>Supervised learning models currently in use require extensive labeled datasets, which can be costly, timeconsuming, and subject to human error. Additionally, these models struggle to generalize their learning to unseen environments. To counter these challenges, our focus is on self-supervised learning, where models learn from unlabeled data, creating useful representations for downstream tasks. We aim to utilize these representations to accurately classify room types in a dynamic environment.
+                                                
+                    </p>
+                    <a href="#" class="mx-2">
+                        <a href="assets/img/cs231n_final_report.pdf"><i class="far fa-file-alt"></i> Report </a>
+                    </a>
+                    <hr class="d-none d-lg-block mb-0 ml-0">                  
+            
+                </div>
+                <img src="assets/img/pichaqiu.gif" alt="" width="150" height="100" style="transform: scaleX(-1)">
+                <img src="assets/img/pichaqiu.gif" width="150" height="100"alt="" style="transform: scaleX(-1)">
             </div>
         </div>
 
@@ -128,8 +200,7 @@
                         "Why Repeated Forward A* with Adaptive A* is sometimes faster than Repeated Forward A* with A* and sometime isn't" based on our research and implementation. 
                         
                         </p>
-                        <hr class="d-none d-lg-block mb-0 ml-0">
-                    
+                        <hr class="d-none d-lg-block mb-0 ml-0">                   
                 
                     </div>
                 <img src="assets/img/pichaqiu.gif" alt="" width="150" height="100" >
@@ -170,5 +241,4 @@
         </div>
     </div>
 </section>
-
 

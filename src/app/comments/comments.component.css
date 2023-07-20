@@ -1,0 +1,10 @@
+.signup-section {
+    height: -webkit-fill-available;
+    padding: 20rem 0;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #795548;
+    border-color: #63453b;
+}

@@ -24,6 +24,7 @@
     display: table;
     width: 100%;
     background-color: #EFE2BA;
+    height: -webkit-fill-available;
   }
   
 

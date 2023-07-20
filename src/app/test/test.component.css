@@ -1,0 +1,22 @@
+.contact-section-color{
+    /* position: relative; */
+    /* width: 100%; */
+    /* height: auto; */
+    /* min-height: 35rem; */
+    /* padding: 15rem 0; */
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.2) 0%, rgba(255, 240, 110, 0.6) 75%, #FFC300 100%), url("src/assets/img/gold-footer.jpg");
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: scroll; */
+    /* background-size: cover; */
+    
+  }
+
+  .card{
+    background-color: rgba(255,255,255,.75);
+    border-color: #ad744d;
+    border-bottom: 0.25rem solid #ad744d;
+    .text-primary{
+      color: #ad744d;
+    }
+  }

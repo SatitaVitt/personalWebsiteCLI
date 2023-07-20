@@ -24,6 +24,8 @@ import { MarkdownModule } from 'ngx-markdown';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { BakingComponent } from './baking/baking.component';
 import { DrawComponent } from './draw/draw.component';
+import { FooterComponent } from './footer/footer.component';
+import { TestComponent } from './test/test.component';
 //import { routes } from './app.routing';
 //import {enableProdMode} from '@angular/core';
 
@@ -56,7 +58,9 @@ import { DrawComponent } from './draw/draw.component';
         UserpageComponent,
         CommentsComponent,
         BakingComponent,
-        DrawComponent
+        DrawComponent,
+        FooterComponent,
+        TestComponent
         //BlogComponent
         //FunFactComponent
     ],
