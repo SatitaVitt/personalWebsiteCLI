@@ -25,7 +25,7 @@ var data = [
     {"x": "Learnt video editting in 4hrs", "value": 10, "key": 1},
     {"x": "Trilingual", "value": 10, "flap": "", "key": 2},
     {"x": "Really want a job", "value": 10, "key": 3},
-    {"x": "王者荣耀", "value": 10, "key": 4},
+    {"x": "王者荣耀??", "value": 10, "key": 4},
     {"x": "Proudest Accomplishment", "value": 10, "key": 5},
     {"x": "Challengesss", "value": 10, "key": 6},
     {"x": "Can't Believe that", "value": 10, "key": 7},
